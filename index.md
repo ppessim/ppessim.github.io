@@ -1,7 +1,6 @@
-
 ---
 layout: default
-title: Bio
+title: About
 ---
 
 # Bio
