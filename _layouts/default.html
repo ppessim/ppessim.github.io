@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="site-container">
+    <aside class="sidebar">
+      <a class="profile-link" href="{{ '/' | relative_url }}">
+        <div class="profile-placeholder">PP</div>
+        <h1>Paulo Pessim</h1>
+      </a>
+
+      <p class="position">Postdoctoral Researcher</p>
+      <p class="affiliation">
+        LAMIH UMR CNRS 8201<br>
+        Université Polytechnique Hauts-de-France
+      </p>
+
+      <p class="interests">
+        Robust Control · LPV Systems ·
+        Distributed Control · Cyber-Physical Systems
+      </p>
+
+      <nav class="navigation">
+        <a href="{{ '/' | relative_url }}">Bio</a>
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+        <a href="{{ '/cv/' | relative_url }}">CV</a>
+        <a href="{{ '/research/' | relative_url }}">Research</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="https://scholar.google.com/">Google Scholar</a>
+        <a href="https://orcid.org/">ORCID</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
+      </div>
+    </aside>
+
+    <main class="content">
+      {{ content }}
+      <footer>
+        <p>© {{ site.time | date: "%Y" }} Paulo Pessim</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
