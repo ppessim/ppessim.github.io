@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,7 @@
 </head>
 <body>
   <div class="site-container">
+
     <aside class="sidebar">
       <a class="profile-link" href="{{ '/' | relative_url }}">
         <div class="profile-placeholder">PP</div>
@@ -17,6 +17,7 @@
       </a>
 
       <p class="position">Postdoctoral Researcher</p>
+
       <p class="affiliation">
         LAMIH UMR CNRS 8201<br>
         Université Polytechnique Hauts-de-France
@@ -27,27 +28,34 @@
         Distributed Control · Cyber-Physical Systems
       </p>
 
-    <nav class="navigation">
-  <a href="{{ '/' | relative_url }}">Bio</a>
-  <a href="{{ '/publications/' | relative_url }}">Publications</a>
-  <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
-  <a href="{{ '/cv/' | relative_url }}">CV</a>
-  <a href="{{ '/service/' | relative_url }}">Service</a>
-</nav>
-
       <div class="social-links">
         <a href="https://scholar.google.com/">Google Scholar</a>
         <a href="https://orcid.org/">ORCID</a>
         <a href="https://www.linkedin.com/">LinkedIn</a>
+        <a href="https://github.com/ppessim">GitHub</a>
       </div>
     </aside>
 
     <main class="content">
-      {{ content }}
+
+      <nav class="navigation">
+        <a href="{{ '/' | relative_url }}">Paulo Pessim</a>
+        <a href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+        <a href="{{ '/cv/' | relative_url }}">CV</a>
+        <a href="{{ '/service/' | relative_url }}">Service</a>
+      </nav>
+
+      <article class="page-content">
+        {{ content }}
+      </article>
+
       <footer>
         <p>© {{ site.time | date: "%Y" }} Paulo Pessim</p>
       </footer>
+
     </main>
   </div>
 </body>
 </html>
+
