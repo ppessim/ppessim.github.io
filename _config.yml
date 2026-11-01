@@ -1,0 +1,7 @@
+
+title: "Paulo Pessim"
+description: "Academic website of Paulo Pessim, researcher in control theory and engineering."
+url: "https://ppessim.github.io"
+baseurl: ""
+theme: jekyll-theme-minimal
+markdown: kramdown
