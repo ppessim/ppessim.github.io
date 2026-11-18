@@ -8,38 +8,47 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  <div class="site-container">
+<aside class="sidebar">
+  <a class="profile-link" href="{{ '/' | relative_url }}">
+    <div class="profile-placeholder">PP</div>
+    <h1>Paulo Pessim</h1>
+  </a>
 
-    <aside class="sidebar">
-      <a class="profile-link" href="{{ '/' | relative_url }}">
-        <div class="profile-placeholder">PP</div>
-        <h1>Paulo Pessim</h1>
-      </a>
+  <p class="profile-description">
+    Postdoctoral Researcher at LAMIH UMR CNRS 8201,
+    Université Polytechnique Hauts-de-France (UPHF), France.
+    Main research interests: Robust, distributed, and resilient 
+    control for several classes of cyber-physical systems.
+  </p>
 
-      <p class="position">Postdoctoral Researcher</p>
+  <div class="social-links">
+    <a href="https://scholar.google.com.br/citations?user=rESplHkAAAAJ&hl=pt-BR"
+       target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/googlescholar/4285F4"
+           alt="" class="social-icon">
+      <span>Google Scholar</span>
+    </a>
 
-      <p class="affiliation">
-        LAMIH UMR CNRS 8201<br>
-        Université Polytechnique Hauts-de-France
-      </p>
+    <a href="https://www.linkedin.com/in/paulo-pessim-a3552aba/"
+       target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/linkedin/0A66C2"
+           alt="" class="social-icon">
+      <span>LinkedIn</span>
+    </a>
 
-      <p class="interests">
-        Robust Control · LPV Systems ·
-        Distributed Control · Cyber-Physical Systems
-      </p>
-
-      <div class="social-links">
-        <a href="https://scholar.google.com/">Google Scholar</a>
-        <a href="https://orcid.org/">ORCID</a>
-        <a href="https://www.linkedin.com/">LinkedIn</a>
-        <a href="https://github.com/ppessim">GitHub</a>
-      </div>
-    </aside>
+    <a href="https://orcid.org/0000-0003-0814-153X"
+       target="_blank" rel="noopener noreferrer">
+      <img src="https://cdn.simpleicons.org/orcid/A6CE39"
+           alt="" class="social-icon">
+      <span>ORCID</span>
+    </a>
+  </div>
+</aside>
 
     <main class="content">
 
       <nav class="navigation">
-        <a href="{{ '/' | relative_url }}">Paulo Pessim</a>
+        <a href="{{ '/' | relative_url }}">HOME</a>
         <a href="{{ '/publications/' | relative_url }}">Publications</a>
         <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
         <a href="{{ '/cv/' | relative_url }}">CV</a>
