@@ -25,6 +25,9 @@ body {
 .sidebar {
   text-align: center;
   align-self: start;
+  background: #f3f6f9;
+  padding: 25px 20px;
+  border-radius: 8px;
 }
 
 .profile-link {
