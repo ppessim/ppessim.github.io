@@ -35,16 +35,19 @@ body {
 /* Left sidebar */
 
 .sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
   min-width: 0;
-  min-height: 100vh;
-  align-self: stretch;
+  align-self: start;
   text-align: center;
-  background: #f3f6f9;
+  background: #e5f1fa;
   padding: 40px 25px;
   margin: 0;
   border: none;
-  border-right: 1px solid #d5d9de;
+  border-right: 1px solid #cbd8e2;
   border-radius: 0;
+  overflow-y: auto;
 }
 
 .profile-link {
@@ -74,10 +77,11 @@ body {
 
 .profile-description {
   margin: 12px 0 22px;
-  color: #555;
+  color: #444;
   font-size: 13px;
-  line-height: 1.55;
-  text-align: left;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .social-links {
@@ -135,7 +139,7 @@ body {
   padding: 5px 0;
   color: #315f8a;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -195,6 +199,9 @@ footer {
     padding: 25px 20px;
     margin: 0;
     border-right: none;
+    position: static;
+    height: auto;
+    overflow-y: visible;
     border-bottom: 1px solid #d5d9de;
   }
 
