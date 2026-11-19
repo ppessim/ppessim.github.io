@@ -79,20 +79,24 @@ body {
   text-align: justify;
   hyphens: auto;
 }
+
+
 .social-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
   margin-top: 20px;
 }
 
 .social-links a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 12px;
-  width: fit-content;
-  padding: 9px 14px;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 190px;
+  min-height: 38px;
+  padding: 6px 10px;
   color: #315f8a;
   text-decoration: none;
   font-size: 13px;
@@ -103,22 +107,18 @@ body {
 }
 
 .social-links a:hover {
-  color: #173e60;
   background: #e5f1fa;
-  border-color: #9ebbd2;
-  text-decoration: none;
+  border-color: #9bbbd6;
 }
 
 .social-icon {
   display: block;
+  flex: 0 0 20px;
   width: 20px;
   height: 20px;
-  padding: 0;
-  flex-shrink: 0;
-  border: none;
-  border-radius: 0;
-  background: transparent;
+  object-fit: contain;
 }
+
 
 
 
