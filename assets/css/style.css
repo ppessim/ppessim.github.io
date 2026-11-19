@@ -55,18 +55,14 @@ body {
   text-decoration: none;
 }
 
-.profile-placeholder {
-  display: flex;
+.profile-photo {
+  display: block;
   width: 145px;
   height: 145px;
   margin: 0 auto 15px;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
-  background: #e9edf2;
-  color: #526579;
-  font-size: 36px;
-  font-weight: 600;
+  object-fit: cover;
+  border: 1px solid #cbd8e2;
 }
 
 .sidebar h1 {
