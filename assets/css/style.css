@@ -94,7 +94,7 @@ body {
   align-items: center;
   gap: 10px;
   box-sizing: border-box;
-  width: 190px;
+  width: 100%;
   min-height: 38px;
   padding: 6px 10px;
   color: #315f8a;
