@@ -84,33 +84,39 @@ body {
   hyphens: auto;
 }
 
+
 .social-links {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 18px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 16px;
+  margin-top: 20px;
 }
 
 .social-links a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   color: #315f8a;
   text-decoration: none;
   font-size: 13px;
+  white-space: nowrap;
 }
 
 .social-links a:hover {
+  color: #173e60;
   text-decoration: underline;
 }
 
 .social-icon {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   flex-shrink: 0;
 }
+
 
 /* Main content column */
 
