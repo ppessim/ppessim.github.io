@@ -136,29 +136,33 @@ body {
 
 .navigation {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 8px 28px;
-  margin: 0 0 30px;
-  padding: 0 0 12px;
-  border-bottom: 1px solid #ddd;
+  gap: 0;
+  margin: 0 -25px 25px;
+  padding: 12px 25px;
+  min-height: 64px;
+  background: linear-gradient(110deg, #78B6E3 0%, #4D94D0 48%, #B8DDF8 100%);
+  border: none;
+  border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
 }
 
 .navigation a {
-  display: inline-block;
-  padding: 5px 0;
-  color: #315f8a;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
   border-bottom: 2px solid transparent;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
-.navigation a:hover {
-  color: #173e60;
-  border-bottom-color: #315f8a;
+.navigation a:hover,
+.navigation a.active {
+  border-bottom-color: #fff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* Page headings and text */
