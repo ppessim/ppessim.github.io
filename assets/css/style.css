@@ -284,10 +284,15 @@ footer {
     border-bottom: 1px solid #d5d9de;
   }
 
-  .profile-placeholder {
-    width: 110px;
-    height: 110px;
-  }
+  .profile-photo {
+  width: 110px;
+  height: 110px;
+  min-width: 110px;
+  min-height: 110px;
+  flex: 0 0 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
   .profile-description {
     max-width: 350px;
