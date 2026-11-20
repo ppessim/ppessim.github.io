@@ -94,11 +94,16 @@ body {
   height: 110px;
   min-width: 110px;
   min-height: 110px;
+  max-width: none;
+  max-height: none;
   flex: 0 0 110px;
-  margin: 0 auto 15px;
+  margin: 0 auto 18px;
+  padding: 0;
+  box-sizing: border-box;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #cbd8e2;
+  object-position: center;
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .sidebar h1 {
