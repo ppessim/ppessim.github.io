@@ -90,8 +90,8 @@ body {
 
 .profile-photo {
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 155px;
+  height: 155px;
   margin: 0 auto 15px;
   border-radius: 50%;
   object-fit: cover;
