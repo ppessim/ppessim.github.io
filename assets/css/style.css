@@ -77,10 +77,11 @@ body {
   margin: 0 0 10px;
   padding: 0;
   color: #fff;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.2;
   text-align: center;
+  text-decoration: none;
 }
 
 .profile-photo {
