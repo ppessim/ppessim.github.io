@@ -80,13 +80,51 @@
 
     <main class="content">
 
-      <nav class="navigation">
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/publications/' | relative_url }}">Publications</a>
-        <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
-        <a href="{{ '/cv/' | relative_url }}">CV</a>
-        <a href="{{ '/service/' | relative_url }}">Service</a>
-      </nav>
+      
+<nav class="navigation">
+  <a href="{{ '/' | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m3 10 9-7 9 7"/>
+      <path d="M5 9v12h14V9"/>
+      <path d="M9 21v-7h6v7"/>
+    </svg>
+    <span>Home</span>
+  </a>
+
+  <a href="{{ '/publications/' | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M9 3h6M10 3v6L4 20h16L14 9V3"/>
+      <path d="M7 16h10"/>
+    </svg>
+    <span>Publications</span>
+  </a>
+
+  <a href="{{ '/teaching/' | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m2 9 10-5 10 5-10 5-10-5Z"/>
+      <path d="M6 11v5c4 3 8 3 12 0v-5"/>
+      <path d="M22 9v6"/>
+    </svg>
+    <span>Teaching</span>
+  </a>
+
+  <a href="{{ '/cv/' | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+      <path d="M14 2v6h6M8 13h8M8 17h8"/>
+    </svg>
+    <span>CV</span>
+  </a>
+
+  <a href="{{ '/service/' | relative_url }}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="3"/>
+      <path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.6a8 8 0 0 1-2 .9l-.3 1.8h-2.8l-.3-1.8a8 8 0 0 1-2-.9l-1.7.6-1.4-2.4 1.4-1.1a7 7 0 0 1 0-2l-1.4-1.1 1.4-2.4 1.7.6a8 8 0 0 1 2-.9l.3-1.8h2.8l.3 1.8a8 8 0 0 1 2 .9l1.7-.6 1.4 2.4-1.4 1.1a7 7 0 0 1 0 2Z"/>
+    </svg>
+    <span>Service</span>
+  </a>
+</nav>
+
 
       <article class="page-content">
         {{ content }}
