@@ -228,50 +228,6 @@ footer {
 
 }
 
-
-.site-search {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 4px 8px 4px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  border-radius: 8px;
-  background: rgba(30, 90, 145, 0.18);
-}
-
-.site-search input {
-  width: 125px;
-  min-width: 0;
-  padding: 6px 4px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: transparent;
-  font: inherit;
-  font-size: 14px;
-}
-
-.site-search input::placeholder {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.site-search button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  border: none;
-  color: #fff;
-  background: transparent;
-  cursor: pointer;
-}
-
-.site-search svg {
-  width: 20px;
-  height: 20px;
-}
-
-
 /* Responsive layout */
 
 @media (max-width: 700px) {
