@@ -41,7 +41,13 @@ body {
   min-width: 0;
   align-self: start;
   text-align: center;
-  background: #e5f1fa;
+   background: linear-gradient(
+    90deg,
+    #4d94d0 0%,
+    #78b6e3 35%,
+    #b8d9f0 70%,
+    #e5f1fa 100%
+  );
   padding: 40px 25px;
   margin: 0;
   border: none;
@@ -50,19 +56,26 @@ body {
   overflow-y: auto;
 }
 
-.profile-link {
-  color: inherit;
+profile-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
+  color: #fff;
 }
 
-.profile-photo {
-  display: block;
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 15px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid #cbd8e2;
+.profile-link h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 76px;
+  box-sizing: border-box;
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .sidebar h1 {
