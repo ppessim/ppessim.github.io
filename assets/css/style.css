@@ -45,7 +45,7 @@ body {
   padding: 40px 25px;
   margin: 0;
   border: none;
-  border-right: 1px solid #cbd8e2;
+  border-right: none;
   border-radius: 0;
   overflow-y: auto;
 }
@@ -148,6 +148,9 @@ body {
   margin: 0;
   padding: 14px 24px;
   min-height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   background: linear-gradient(
     90deg,
@@ -221,6 +224,28 @@ footer {
   border-top: 1px solid #eee;
   color: #888;
   font-size: 12px;
+}
+
+}
+
+.site-search input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-search button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.site-search svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Responsive layout */
