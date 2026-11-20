@@ -148,14 +148,17 @@ body {
   margin: 0;
   padding: 14px 24px;
   min-height: 76px;
+
   background: linear-gradient(
-    110deg,
-    #91C6E9 0%,
-    #559CD3 52%,
-    #B8DDF8 100%
+    90deg,
+    #e5f1fa 0%,
+    #b8d9f0 35%,
+    #78b6e3 70%,
+    #4d94d0 100%
   );
+
   border: none;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0;
 }
 
 .navigation a {
